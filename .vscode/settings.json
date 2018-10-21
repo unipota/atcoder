@@ -37,6 +37,9 @@
     "ratio": "cpp",
     "system_error": "cpp",
     "tuple": "cpp",
-    "numeric": "cpp"
+    "numeric": "cpp",
+    "cfenv": "cpp",
+    "charconv": "cpp",
+    "cuchar": "cpp"
   }
 }
