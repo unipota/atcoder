@@ -8,13 +8,11 @@
 using namespace std;
 
 int main(){
-  string str;
-  cin >> str;
-  string ban = "aiueo";
-  for(auto&& e : str) {
-    if(ban.find(e) == string::npos)
-      cout << e;
+  int N,sum = 0;
+  cin >> N;
+  for(int i=1;i<=N;i++){
+    sum += i*10000;
   }
-  cout << endl;
+  cout << sum/N << endl;
   return 0;
 }

@@ -8,13 +8,8 @@
 using namespace std;
 
 int main(){
-  string str;
-  cin >> str;
-  string ban = "aiueo";
-  for(auto&& e : str) {
-    if(ban.find(e) == string::npos)
-      cout << e;
-  }
-  cout << endl;
+  string str1, str2;
+  cin >> str1 >> str2;
+  for(int i=0;)
   return 0;
 }
