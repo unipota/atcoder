@@ -5,59 +5,28 @@ using namespace std;
 int main(int argc, char const *argv[]) {
   int deg,dis;
   vector<string> d = {"N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"};
+  vector<int> w = {-1,2,15,33,54,79,107,138,171,207,244,284,326,2000};
 
   cin >> deg >> dis;
 
   int ms = round(dis / 6.0);
-  int lv = 100;
+  int x,y;
 
-  if(ms>=0&&ms<=2){
-    lv = 0;
-  }else
-  if(ms>=3&&ms<=15){
-    lv = 1;
-  }else
-  if(ms>=16&&ms<=33){
-    lv = 2;
-  }else
-  if(ms>=34&&ms<=54){
-    lv = 3;
-  }else
-  if(ms>=55&&ms<=79){
-    lv = 4;
-  }else
-  if(ms>=80&&ms<=107){
-    lv = 5;
-  }else
-  if(ms>=108&&ms<=138){
-    lv = 6;
-  }else
-  if(ms>=139&&ms<=171){
-    lv = 7;
-  }else
-  if(ms>=172&&ms<=207){
-    lv = 8;
-  }else
-  if(ms>=208&&ms<=244){
-    lv = 9;
-  }else
-  if(ms>=245&&ms<=284){
-    lv = 10;
-  }else
-  if(ms>=285&&ms<=326){
-    lv = 11;
-  }else
-  if(ms>=327){
-    lv = 12;
+  deg *= 10;
+
+  if(deg < 1125 || deg >= 34875)
+    x = 0;
+  else {
+    x = (deg - 1125) / 2250 + 1;
   }
 
-
-  if(lv!=0){
-    cout << d[(int)((deg+125) / 225)] << " ";
-  }else{
-    cout << "C ";
+  for(int i=1;i<w.size()+1;i++){
+    if(ms > w[i-1] && ms <= w[i]){
+      y = i;
+      break;
+    }
   }
-  cout << lv << endl;
-
+  
+  cout << ((y-1)!=0?d[x]:"C") << " " << y-1 << endl;
   return 0;
 }
