@@ -9,5 +9,12 @@
 using namespace std;
 
 int main(){
+  int n,min=100,tmp;
+  cin >> n;
+  r(i,n) {
+    cin >> tmp;
+    min = tmp < min ? tmp : min;
+  }
+  cout << min << endl;
   return 0;
 }
