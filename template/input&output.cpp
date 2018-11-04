@@ -19,6 +19,7 @@ int main(){
   std::cout << std::defaultfloat;
   std::cout << 0.0001;  // "0.0001"（小数点数表記）
   std::cout << 0.00001; // "1e-05"  (指数表記)
+  
 
   return 0;
 }
