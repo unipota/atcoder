@@ -1,14 +1,9 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
-#include <list>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
 #include <cmath>
+#include <set>
+#include <map>
 #include <algorithm>
 #define r(i,n) for(int i=0;i<n;i++)
 #define R(i,c,n) for(int i=c;i<n;i++)
@@ -18,12 +13,15 @@
 #define UNIQUE(v)  sort(ALL(v));v.erase(unique(ALL(v)),v.end());
 #define pb push_back
 using namespace std;
-const int dx[] = {1, -1, 0, 0};
-const int dy[] = {0, 0, -1, 1};
-const double PI = 3.14159265358979323846;
 
 int main(){
   ios::sync_with_stdio(false);
 	cin.tie(0);
+
+  string hoge = "hoge";
+  for(auto &s:hoge){
+    cout << s << endl;
+  }
+
   return 0;
 }

@@ -41,6 +41,7 @@
     "cfenv": "cpp",
     "charconv": "cpp",
     "cuchar": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "utility": "cpp"
   }
 }
