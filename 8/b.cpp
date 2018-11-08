@@ -25,8 +25,26 @@ const double PI = 3.14159265358979323846;
 int main(){
   ios::sync_with_stdio(false);
 	cin.tie(0);
-  int s,t;
-  cin >> s >> t;
-  cout << t-s+1 << "\n";
+  int n;
+  cin >> n;
+  map<string,int> vote;
+  string tmp;
+  r(i,n){
+    cin >> tmp;
+    if(vote.count(tmp))
+      vote[tmp] ++;
+    else
+      vote.emplace(tmp,1);
+  }
+  string name;
+  int max=-1;
+  for(auto& v:vote){
+    if(v.second>max){
+      max = v.second;
+      name = v.first;
+    }
+  }
+  cout << name << endl;
+
   return 0;
 }
