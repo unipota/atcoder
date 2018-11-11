@@ -26,5 +26,18 @@ const double PI = 3.14159265358979323846;
 int main(){
   ios::sync_with_stdio(false);
 	cin.tie(0);
+  int n;
+  cin >> n;
+  vector<int> p;
+  int tmp;
+  r(i,n) {
+    cin >> tmp;
+    if(find(p.begin(),p.end(),tmp) == p.end()){
+      p.push_back(tmp);
+    }
+  }
+  sort(p.begin(),p.end());
+  p.pop_back();
+  cout << p.back() << endl;
   return 0;
 }
