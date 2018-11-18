@@ -20,6 +20,7 @@ int main(){
   std::cout << 0.0001;  // "0.0001"（小数点数表記）
   std::cout << 0.00001; // "1e-05"  (指数表記)
   
+  cout << setfill('0') << setw(5) << right << 42; // 00042
 
   return 0;
 }
