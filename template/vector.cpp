@@ -17,9 +17,9 @@ int main(){
   cin.tie(0);
 
   vector<int> a1;//宣言
-  vector<int> a2(123)//初期要素123
-  vector<int> a3(10,123)//要素数10,初期要素123
-  vector<int> a4{1,2,3}//データ指定して初期化
+  vector<int> a2(123);//初期要素123
+  vector<int> a3(10,123);//要素数10,初期要素123
+  vector<int> a4{1,2,3};//データ指定して初期化
   
   return 0;
 }

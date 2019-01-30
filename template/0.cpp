@@ -1,16 +1,4 @@
-#include <iostream>
-#include <iomanip>
-#include <vector>
-#include <list>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <cmath>
-#include <algorithm>
-#include <iterator>
+#include <bits/stdc++.h>
 #define r(i,n) for(int i=0;i<n;i++)
 #define R(i,c,n) for(int i=c;i<n;i++)
 #define DEBUG(x) cerr << #x << ": " << x << endl;
