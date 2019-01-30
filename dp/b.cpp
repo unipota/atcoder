@@ -11,23 +11,28 @@ const int dx[] = {1, -1, 0, 0};
 const int dy[] = {0, 0, -1, 1};
 const double PI = 3.14159265358979323846;
 
+template<class T> inline bool chmin(T& a, T b) {
+    if (a > b) {
+        a = b;
+        return true;
+    }
+    return false;
+}
+template<class T> inline bool chmax(T& a, T b) {
+    if (a < b) {
+        a = b;
+        return true;
+    }
+    return false;
+}
+
 int main(){
   ios::sync_with_stdio(false);
   cin.tie(0);
-  int n,k;
-  cin >> n >> k;
-  int h[n];
-  r(i,n) cin >> h[i];
-  int cost[n] = {0};
-  int minv;
-  r(i,n) {
-    minv = 10000;
-    for(int j=0; j < min(i,k); j++) {
-      minv = minv > cost[i-k] + abs(h[i]-h[i-k]) ? cost[i-k] + abs(h[i]-h[i-k]) : minv;
-    }
-    cost[i] = minv;
-    cout << cost[i] << endl;
-  }
-  cout << cost[n-1] << endl;
+  int n,a,b;
+  cin >> n >> a >> b;
+  int p[n];
+  r(i,n) cin >> p[i];
+  
   return 0;
 }
